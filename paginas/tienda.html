@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/style.css">
+    <script src="https://kit.fontawesome.com/cd11a3ddd2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+    <title>Michael Scott Paper Company</title>
+  </head>
+
+  <body>
+
+    <!----------HEADER---------->    
+    <header >
+      <div class="up">
+        <div>
+          <a href="../index.html"><img src="../imagenes/mspc.png" alt="logo" /></a> 
+        </div>
+        <span class="lema">The people person’s paper people.</span>
+        <div class="social">
+            <a href="https://www.deviantart.com/merolvonmet" target="_blank"> <i class="fab fa-deviantart"></i></a>
+            <a href="https://www.instagram.com/m3741/" target="_blank"> <i class="fab fa-instagram-square"></i></a> 
+            <a href="https://twitter.com/4nrky" target="_blank"> <i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <nav>
+        <ul class="barra">
+          <li class="anima_pestana"><a href="../index.html">INICIO</a></li>
+          <li class="pestana"><a href="tienda.html">TIENDA</a></li>
+          <li class="anima_pestana"><a href="faq.html">FAQ</a></li>
+          <li class="anima_pestana"><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+          <li class="anima_pestana"><a href="contacto.html">CONTACTO</a></li>
+        </ul>   
+      </nav>
+    </header>
+
+    <!----------MAIN--------->
+    <main class="tienda">
+      <section class="producto">
+        <img src="../imagenes/papel.jpg" height="400px" alt="caja de papel Xerox" class="caja">
+        <span class="tit">PAPEL PARA IMPRESORA XEROX</span>
+        <ol class="precio">
+          <li>Normal: <span class="font_rojo">$900</span></li>
+          <li>Medio mayoreo: <span class="font_rojo">$800</span></li>
+          <li>Mayoreo: <span class="font_rojo">$700</span></li>
+        </ol>
+        <ul class="descr">
+          <li>Gramaje: 75gr/M2</li>
+          <li>Blancura: 93%</li>
+          <li>Tamaño: Carta</li>
+          <li>Medidas: 216 x 279mm</li>
+          <li>Caja con 5000 hojas / paquete de 500 hojas</li>
+        </ul>
+        <div class="agrega">
+          <label for="cantidad">cantidad</label>
+          <input type="number" name="cantidad" id="cantidad" placeholder="cantidad"/>
+          <input type="submit" value="AGREGAR">
+        </div>
+      </section>
+      <section class="sidebar">
+        <img src="../imagenes/papel.jpg" width="100px" alt="caja de papel Xerox">
+        <span>PAPEL PARA IMPRESORA XEROX</span>
+          <input type="number" name="cantidad" id="cantidad" placeholder="cantidad">
+        <div class="boton_pagar">
+          <input type="submit" value="PAGAR">
+        </div>  
+      </section>
+      <section class="sidebar_abajo">
+          <a href="tienda.html" class="mas_productos">
+            <img src="../imagenes/papel.jpg" height="100px" alt="caja de papel Xerox">
+            <span>PAPEL PARA IMPRESORA XEROX</span>
+          </a>
+        <span class="flecha"><i class="fas fa-chevron-right"></i></span>
+      </section>
+    </main>
+    
+    <!----------FOOTER---------->
+    <footer class="final">
+      <p>Powered by Merol Von Met 2021</p><a href="disclaimer.html">secret luncheon</a>
+    </footer>
+  </body>
+</html>
