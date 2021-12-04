@@ -1,0 +1,30 @@
+.quest{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;   
+}
+.divisor{
+    padding:1rem 2rem;
+    margin: 1rem;
+    border: $borde;
+    border-radius: 1rem;
+    max-width: 90%;
+}
+.question{
+    font-size: 2rem;
+    font-weight: 500;
+    color: $font-titulo;
+
+}
+.answ{
+    font-size: 1.5rem;
+    padding-left: 3rem;
+}
+.fa-map-marked-alt{
+    color: $font-titulo;
+    cursor: pointer;
+}
+.mapouter{
+    box-shadow: $sombra;
+}

@@ -1,0 +1,24 @@
+.us{
+    padding: 3rem 0rem;
+}
+.bios{
+    display: grid;
+    grid-template-areas:    "imagen titulo"
+                            "imagen descripcion";
+    padding: 2rem 4rem;
+    border: $borde;
+    margin: 2rem 2rem;
+    border-radius: 2rem;
+}
+.titulo{
+    grid-area: titulo;
+}
+.imagen{
+    grid-area: imagen;
+    width: 400px;
+    box-shadow: $sombra;
+}
+.descripcion{
+    grid-area: descripcion;
+    font-size: 1.3rem;
+}

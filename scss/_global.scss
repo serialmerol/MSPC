@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+main{
+    background-color: $bg-main;
+    min-height: 80vh;
+}
+.centrar{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.lema{
+    font-size: 1.5rem;
+    text-align: center;
+    color: $font-sub;
+    grid-area: lema;
+    padding-top: 2rem;
+}
+
+/*----------footer----------*/
+footer{
+    background-image: radial-gradient(white, $font-sub, black);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px outset black;
+}
+.final {
+    p{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    a{
+        color: $font-blanco;
+        font-size: .7rem;
+    }
+}

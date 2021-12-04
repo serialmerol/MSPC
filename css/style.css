@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  background-color: #E6D5A7;
+  min-height: 80vh;
+}
+
+.centrar {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.lema {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #63615A;
+  grid-area: lema;
+  padding-top: 2rem;
+}
+
+/*----------footer----------*/
+footer {
+  background-image: radial-gradient(white, #63615A, black);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 5px outset black;
+}
+
+.final p {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.final a {
+  color: ghostwhite;
+  font-size: 0.7rem;
+}
+
+header {
+  background-color: #614A0A;
+}
+
+.up {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+.burger {
+  font-size: 2rem;
+  color: ghostwhite;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.social a {
+  font-size: 2rem;
+  color: ghostwhite;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.barra {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0rem;
+}
+.barra a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.pestana {
+  border: 1px solid #E6D5A7;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #E6D5A7;
+  width: 15rem;
+  padding: 0.2rem;
+}
+.pestana a {
+  color: #614A0A;
+}
+
+.anima_pestana {
+  border: 1px solid #614A0A;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #614A0A;
+  width: 15rem;
+  height: 0rem;
+  padding: 0.2rem;
+  transition: all 500ms;
+}
+.anima_pestana:hover {
+  border: 1px solid #E6D5A7;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #E6D5A7;
+  width: 15rem;
+  height: 100%;
+  padding: 0.2rem;
+}
+.anima_pestana a:hover {
+  color: #614A0A;
+}
+
+.intro {
+  max-width: 90%;
+  align-self: center;
+  box-shadow: 0px 10px 10px 0px black;
+  padding: 1rem;
+  display: grid;
+  grid-template-areas: "casa titulo" "casa lema" "casa descripcion";
+  margin-bottom: 2rem;
+}
+
+.casa {
+  grid-area: casa;
+  border: 3px solid #63615A;
+}
+
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+  color: #594b24;
+  grid-area: titulo;
+}
+
+.descripcion {
+  font-size: 1rem;
+  grid-area: descripcion;
+  padding: 1rem;
+}
+
+.tarjeta {
+  max-width: 80%;
+  background-color: #E6D5A7;
+  box-shadow: 0px 10px 10px 0px black;
+}
+
+.tienda {
+  display: grid;
+  grid-template-areas: "producto sidebar" "sidebar_abajo sidebar_abajo";
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  padding-top: 2rem;
+}
+
+.producto {
+  font-size: 1.5rem;
+  grid-area: producto;
+  border: 2px solid #63615A;
+  justify-self: self-end;
+  display: grid;
+  grid-template-areas: "caja tit" "caja precio" "descr agrega";
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.caja {
+  grid-area: caja;
+  border: 2px solid #63615A;
+}
+
+.tit {
+  color: #594b24;
+  grid-area: tit;
+  font-size: 1.5rem;
+}
+
+.precio {
+  list-style: circle outside;
+  grid-area: precio;
+}
+.precio span {
+  color: red;
+}
+
+.descr {
+  grid-area: descr;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.agrega {
+  grid-area: agrega;
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+  max-width: 40%;
+}
+
+.sidebar {
+  font-size: 0.8rem;
+  font-weight: 700;
+  grid-area: sidebar;
+  border: 2px solid #63615A;
+  max-width: 40%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+.boton_pagar {
+  padding-top: 2rem;
+  align-self: center;
+}
+
+.sidebar_abajo {
+  grid-area: sidebar_abajo;
+  border: 2px solid #63615A;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  justify-self: start;
+  min-width: 90%;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mas_productos {
+  max-width: 100px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.flecha {
+  font-size: 2rem;
+  padding: 3rem 1rem;
+}
+
+.quest {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.divisor {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: 2px solid #63615A;
+  border-radius: 1rem;
+  max-width: 90%;
+}
+
+.question {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #594b24;
+}
+
+.answ {
+  font-size: 1.5rem;
+  padding-left: 3rem;
+}
+
+.fa-map-marked-alt {
+  color: #594b24;
+  cursor: pointer;
+}
+
+.mapouter {
+  box-shadow: 0px 10px 10px 0px black;
+}
+
+.us {
+  padding: 3rem 0rem;
+}
+
+.bios {
+  display: grid;
+  grid-template-areas: "imagen titulo" "imagen descripcion";
+  padding: 2rem 4rem;
+  border: 2px solid #63615A;
+  margin: 2rem 2rem;
+  border-radius: 2rem;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.imagen {
+  grid-area: imagen;
+  width: 400px;
+  box-shadow: 0px 10px 10px 0px black;
+}
+
+.descripcion {
+  grid-area: descripcion;
+  font-size: 1.3rem;
+}
+
+.contact {
+  color: #594b24;
+}
+
+.formato {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  align-items: center;
+}
+
+.centro {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.pestana_hide {
+  border: 1px solid #614A0A;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #614A0A;
+  width: 15rem;
+  padding: 0.2rem;
+  transition: 300ms;
+}
+
+.pestana_hide:hover {
+  transform: scale(115%);
+  background-color: #E6D5A7;
+  border: 1px solid #E6D5A7;
+}
+
+.disclaim {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  font-size: 2.5rem;
+  max-width: 80%;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0px 10px 10px 0px black;
+}
+
+.log {
+  padding-top: 3rem;
+  align-items: center;
+}
+
+.nbc {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

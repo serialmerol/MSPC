@@ -1,0 +1,86 @@
+.tienda{
+    display: grid;
+    grid-template-areas:    "producto sidebar"
+                            "sidebar_abajo sidebar_abajo";
+    grid-column-gap: 1rem;         
+    grid-row-gap: 1rem;        
+    padding-top: 2rem;       
+}
+.producto{
+    font-size: 1.5rem;
+    grid-area: producto;
+    border: $borde;
+    justify-self: self-end;
+    display: grid;
+    grid-template-areas:    "caja tit"
+                            "caja precio"
+                            "descr agrega";
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.caja{
+    grid-area: caja;
+    border: $borde;
+}
+.tit{
+    color: $font-titulo;
+    grid-area: tit;
+    font-size: 1.5rem;
+}
+.precio{
+    list-style: circle outside;
+    grid-area: precio;
+    span{
+        color: $font-precio;
+    }
+}
+.descr{
+    grid-area: descr;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.agrega{
+    grid-area: agrega;
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    max-width: 40%;
+}
+.sidebar{
+    font-size: .8rem;
+    font-weight: 700;
+    grid-area: sidebar;
+    border: $borde;
+    max-width: 40%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+}
+.boton_pagar{
+    padding-top: 2rem;
+    align-self: center;
+}
+.sidebar_abajo{
+    grid-area: sidebar_abajo;
+    border: $borde;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    justify-self: start;
+    min-width: 90%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.mas_productos{
+    max-width: 100px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.flecha{
+    font-size: 2rem;
+    padding: 3rem 1rem;
+}
