@@ -1,7 +1,7 @@
 {
   "name": "carlos-lopez---mspc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fan page de The office para clase de desarrollo web",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
