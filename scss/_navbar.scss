@@ -19,13 +19,13 @@ header{
         color:$font-blanco;
         padding-top: 1rem;
         padding-right: 1rem;
-        transition:font-size 0.3s ease-out;  
+        transition:font-size 0.3s ease-out;
+        &:hover{
+            font-size: 3rem;
+            color: $bg-main;
+            cursor: pointer;
+        }
     }
-}
-.social a:hover{
-    font-size: 3rem;
-    color: $bg-main;
-    cursor: pointer;
 }
 .barra{  
     list-style: none;
@@ -47,6 +47,9 @@ header{
     padding: .2rem;
     a{
         color: $bg-nav;
+        &:hover{
+            color: $bg-nav;
+        }
     }
 }
 .anima_pestana{

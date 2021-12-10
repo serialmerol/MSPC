@@ -88,7 +88,6 @@ header {
   padding-right: 1rem;
   transition: font-size 0.3s ease-out;
 }
-
 .social a:hover {
   font-size: 3rem;
   color: #E6D5A7;
@@ -116,6 +115,9 @@ header {
   padding: 0.2rem;
 }
 .pestana a {
+  color: #614A0A;
+}
+.pestana a:hover {
   color: #614A0A;
 }
 
