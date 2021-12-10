@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="pagina de contacto de la Michael Scott Paper Company">
-    <meta name="keywords"  content="paper, papel, papeleria, the office, fansite, compañia, contacto">
+    <meta name="keywords"  content="paper, papel, papeleria, the office, fansite, compañia ficticia, contacto, email">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/cd11a3ddd2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     <!----------HEADER---------->    
     <header >
       <div class="up">
-        <div>
+        <div class="animate__animated animate__fadeInLeft">
           <a href="../index.html"><img src="../imagenes/mspc.png" alt="logo" /></a> 
         </div>
         <span class="lema">The people person’s paper people.</span>
@@ -45,15 +46,15 @@
       <form class="centrar">
           <fieldset class="formato">
               <legend class="contact">CONTACTO</legend>
-              <div class="">
+              <div class="entrada">
                 <label for="nombre">nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="escriba aqui su nombre"/>
               </div>
-              <div class="">
+              <div class="entrada">
                 <label for="correo">correo</label>
                 <input type="email" name="correo" id="correo" placeholder="id@dominio.com"/>
               </div>
-              <div class="">
+              <div class="entrada">
                 <label for="negocio">Tipo de negocio</label>
                 <select name="negocio">
                   <option>negocio familiar</option>              
@@ -62,18 +63,18 @@
                   <option>ganador del ticket dorado</option>              
                 </select>
               </div>
-              <div class="">
+              <div class="entrada">
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="escriba aqui su mensaje"></textarea>
               </div>  
-              <fieldset class="centro">
+              <fieldset class="entrada">
                 <p class="font_rojo formato">ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn</p>
-                <div class="centro">acepta terminos y condiciones
+                <div class="entrada centrar">acepta terminos y condiciones
                   <input type="checkbox" name="aceptar" value="1"/>
                 </div>
               </fieldset>  
-              <div class="centro">
-                <input type="submit" value="ENVIAR" />
-                <input type="reset" value="BORRAR" />
+              <div class="entrada">
+                <input type="submit" value="ENVIAR" class="boton" />
+                <input type="reset" value="BORRAR" class="boton" />
               </div>
           </fieldset>
       </form>

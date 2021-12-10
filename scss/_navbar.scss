@@ -1,6 +1,7 @@
 header{
     background-color: $bg-nav;
 }
+
 .up{
     display: flex;
     justify-content: space-between;
@@ -17,8 +18,14 @@ header{
         font-size: 2rem;
         color:$font-blanco;
         padding-top: 1rem;
-        padding-right: 1rem;  
+        padding-right: 1rem;
+        transition:font-size 0.3s ease-out;  
     }
+}
+.social a:hover{
+    font-size: 3rem;
+    color: $bg-main;
+    cursor: pointer;
 }
 .barra{  
     list-style: none;

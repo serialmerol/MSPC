@@ -46,6 +46,9 @@
     align-self: auto;
     max-width: 40%;
 }
+.ent_cant{
+    @include margen_input(.5rem)
+}
 .sidebar{
     font-size: .8rem;
     font-weight: 700;
@@ -79,6 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    @extend .link_style;
 }
 .flecha{
     font-size: 2rem;

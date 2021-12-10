@@ -12,6 +12,9 @@
     background-color: $bg-main;
     border: 1px solid $bg-main;
 }
+.pestana_hide a:hover{
+    color: $bg-nav;
+}
 .disclaim{
     display: flex;
     flex-direction: column;
