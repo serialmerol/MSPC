@@ -1,0 +1,15 @@
+.fondo{
+    padding: 5rem;
+    background-color: $bg-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    h1{
+        margin: 1rem;
+    }
+    img{
+        width: 50%;
+        margin: 2rem;
+    }
+}
