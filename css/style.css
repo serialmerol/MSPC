@@ -10,6 +10,10 @@ main {
   min-height: 80vh;
 }
 
+header {
+  background-color: #614A0A;
+}
+
 .link_style, .mas_productos, .final a {
   text-decoration: none;
 }
@@ -64,23 +68,18 @@ footer {
   font-size: 0.7rem;
 }
 
-header {
-  background-color: #614A0A;
-}
-
 .up {
   display: flex;
-  justify-content: space-between;
-  padding: 0.3rem;
 }
 
-.burger {
-  font-size: 2rem;
-  color: ghostwhite;
-  padding-top: 1rem;
-  padding-right: 1rem;
+.lema {
+  display: none;
 }
 
+.social {
+  margin-left: auto;
+  padding: 2rem;
+}
 .social a {
   font-size: 2rem;
   color: ghostwhite;
@@ -94,56 +93,145 @@ header {
   cursor: pointer;
 }
 
-.barra {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0rem;
-}
-.barra a {
-  color: ghostwhite;
+.menu_responsive a {
+  color: inherit;
   text-decoration: none;
-  font-size: 1.5rem;
+  display: block;
+  padding: 10px 20px;
+  max-width: 200px;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
 }
 
-.pestana {
-  border: 1px solid #E6D5A7;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  background-color: #E6D5A7;
-  width: 15rem;
-  padding: 0.2rem;
-}
-.pestana a {
-  color: #614A0A;
-}
-.pestana a:hover {
-  color: #614A0A;
+.menu_responsive input[type=checkbox], .menu_responsive .fa-sort-down, .menu_responsive .fa-sort-up {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
 }
 
-.anima_pestana {
-  border: 1px solid #614A0A;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  background-color: #614A0A;
-  width: 15rem;
-  height: 0rem;
-  padding: 0.2rem;
-  transition: all 500ms;
-}
-.anima_pestana:hover {
-  border: 1px solid #E6D5A7;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  background-color: #E6D5A7;
-  width: 15rem;
-  height: 100%;
-  padding: 0.2rem;
-}
-.anima_pestana:hover a {
-  color: #614A0A;
+.menu_responsive .fa-sort-down, .menu_responsive .fa-sort-up {
+  font-size: 48px;
+  pointer-events: none;
 }
 
+.menu_responsive input[type=checkbox] {
+  opacity: 0;
+}
+
+.menu_responsive {
+  color: white;
+  position: relative;
+  background: #614A0A;
+  min-height: 48px;
+}
+
+.menu_responsive nav {
+  display: none;
+}
+
+.menu_responsive input:checked ~ nav {
+  display: block;
+}
+
+.menu_responsive input:checked ~ .fa-sort-down {
+  display: none;
+}
+
+.menu_responsive input:not(:checked) ~ .fa-sort-up {
+  display: none;
+}
+
+@media only screen and (min-width: 850px) {
+  .menu_responsive i {
+    display: none;
+  }
+
+  .menu_responsive nav {
+    display: block;
+  }
+
+  .lema {
+    display: block;
+  }
+
+  .up {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+  }
+
+  .social {
+    align-self: center;
+    margin-left: 0%;
+  }
+  .social a {
+    font-size: 2rem;
+    color: ghostwhite;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    transition: font-size 0.3s ease-out;
+  }
+  .social a:hover {
+    font-size: 3rem;
+    color: #E6D5A7;
+    cursor: pointer;
+  }
+
+  .barra {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0rem;
+  }
+  .barra a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .pestana {
+    border: 1px solid #E6D5A7;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #E6D5A7;
+    width: 15rem;
+    padding: 0.2rem;
+  }
+  .pestana a {
+    color: #614A0A;
+  }
+  .pestana a:hover {
+    color: #614A0A;
+  }
+
+  .anima_pestana {
+    border: 1px solid #614A0A;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #614A0A;
+    width: 15rem;
+    height: 0rem;
+    padding: 0.2rem;
+    transition: all 500ms;
+  }
+  .anima_pestana:hover {
+    border: 1px solid #E6D5A7;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #E6D5A7;
+    width: 15rem;
+    height: 100%;
+    padding: 0.2rem;
+  }
+  .anima_pestana:hover a {
+    color: #614A0A;
+  }
+}
 .intro {
   max-width: 90%;
   align-self: center;
@@ -349,9 +437,15 @@ header {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
-  margin: 0.5rem 1rem;
+  margin: 2rem 1rem;
   align-items: center;
+  border: none;
   border-radius: 0.5rem;
+  box-shadow: 0px 10px 10px 0px black;
+}
+
+.pledge {
+  padding: 1rem;
 }
 
 .entrada {

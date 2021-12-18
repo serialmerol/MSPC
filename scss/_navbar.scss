@@ -1,19 +1,12 @@
-header{
-    background-color: $bg-nav;
-}
-
 .up{
     display: flex;
-    justify-content: space-between;
-    padding: .3rem;
 }
-.burger{
-    font-size: 2rem;
-    color:$font-blanco;
-    padding-top: 1rem;
-    padding-right: 1rem;
+.lema{
+    display: none;
 }
 .social {
+    margin-left: auto;
+    padding: 2rem;
     a{
         font-size: 2rem;
         color:$font-blanco;
@@ -27,51 +20,128 @@ header{
         }
     }
 }
-.barra{  
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 0rem;
-    a{
-        color: $font-blanco;
-        text-decoration: none; 
-        font-size: 1.5rem; 
-    }
+.menu_responsive a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    max-width: 200px;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
 }
-.pestana{
-    border: 1px solid $bg-main;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    background-color: $bg-main;
-    width: 15rem;
-    padding: .2rem;
-    a{
-        color: $bg-nav;
-        &:hover{
-            color: $bg-nav;
+.menu_responsive input[type="checkbox"], .menu_responsive .fa-sort-down, .menu_responsive .fa-sort-up {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+}
+.menu_responsive .fa-sort-down, .menu_responsive .fa-sort-up {
+    font-size: 48px;
+    pointer-events: none;
+}
+.menu_responsive input[type="checkbox"] {
+    opacity: 0;
+}
+.menu_responsive {
+    color: white;
+    position: relative;
+    background: $bg-nav;
+    min-height: 48px;
+}
+.menu_responsive nav {
+    display: none;
+}
+.menu_responsive input:checked ~ nav {
+    display: block;
+}
+.menu_responsive input:checked ~ .fa-sort-down {
+    display: none;
+}
+.menu_responsive input:not(:checked) ~ .fa-sort-up {
+    display: none;
+}
+
+@media only screen and (min-width: 850px) {
+    .menu_responsive i{
+        display: none;
+    }
+    .menu_responsive nav{
+        display:block
+    }
+    .lema{
+        display: block;
+    }
+    .up{
+        display: flex;
+        justify-content: space-between;
+        padding: .3rem;
+    }
+    .social {
+        align-self: center;
+        margin-left: 0%;
+        a{
+            font-size: 2rem;
+            color:$font-blanco;
+            padding-top: 1rem;
+            padding-right: 1rem;
+            transition:font-size 0.3s ease-out;
+            &:hover{
+                font-size: 3rem;
+                color: $bg-main;
+                cursor: pointer;
+            }
         }
     }
-}
-.anima_pestana{
-    border: 1px solid $bg-nav;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    background-color: $bg-nav;
-    width: 15rem;
-    height: 0rem;
-    padding: .2rem;
-    transition: all 500ms;
-    &:hover{
+    .barra{  
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 0rem;
+        a{
+            color: $font-blanco;
+            text-decoration: none; 
+            font-size: 1.5rem; 
+        }
+    }
+    .pestana{
         border: 1px solid $bg-main;
         border-top-left-radius: .5rem;
         border-top-right-radius: .5rem;
         background-color: $bg-main;
         width: 15rem;
-        height: 100%;
         padding: .2rem;
         a{
             color: $bg-nav;
+            &:hover{
+                color: $bg-nav;
+            }
         }
     }
-    
+    .anima_pestana{
+        border: 1px solid $bg-nav;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        background-color: $bg-nav;
+        width: 15rem;
+        height: 0rem;
+        padding: .2rem;
+        transition: all 500ms;
+        &:hover{
+            border: 1px solid $bg-main;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+            background-color: $bg-main;
+            width: 15rem;
+            height: 100%;
+            padding: .2rem;
+            a{
+                color: $bg-nav;
+            }
+        }
+        
+    }
 }
