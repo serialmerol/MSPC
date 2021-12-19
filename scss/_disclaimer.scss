@@ -32,3 +32,12 @@
 .nbc{
     text-decoration: none;
 }
+
+@media only screen and (max-width: 850px){
+    .centrar{
+        p{
+            font-size: 1.5rem;
+            padding: .5rem;
+        }
+    }
+}

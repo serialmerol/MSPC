@@ -263,6 +263,12 @@ footer {
   box-shadow: 0px 10px 10px 0px black;
 }
 
+@media only screen and (max-width: 850px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .tienda {
   display: grid;
   grid-template-areas: "producto sidebar" "sidebar_abajo sidebar_abajo";
@@ -324,12 +330,16 @@ footer {
   font-weight: 700;
   grid-area: sidebar;
   border: 2px solid #63615A;
-  max-width: 40%;
+  border-radius: 0.5rem;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 1rem;
+}
+
+.text_bar {
+  max-width: 40%;
 }
 
 .boton_pagar {
@@ -362,6 +372,30 @@ footer {
   padding: 3rem 1rem;
 }
 
+@media only screen and (max-width: 850px) {
+  .tienda {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .producto {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+  .producto .precio {
+    list-style: none;
+  }
+
+  .sidebar {
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar_abajo {
+    display: none;
+  }
+}
 .quest {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -427,6 +461,16 @@ footer {
   font-size: 1.3rem;
 }
 
+@media only screen and (max-width: 850px) {
+  .us {
+    padding: 1rem;
+  }
+
+  .bios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .contact {
   color: #594b24;
 }
@@ -490,6 +534,12 @@ footer {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 850px) {
+  .centrar p, .tarjeta p, .divisor p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
 .fondo {
   padding: 5rem;
   background-color: #E6D5A7;

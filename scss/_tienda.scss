@@ -54,12 +54,15 @@
     font-weight: 700;
     grid-area: sidebar;
     border: $borde;
-    max-width: 40%;
+    border-radius: .5rem;
     justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     padding: 1rem;
+}
+.text_bar{
+    max-width: 40%;
 }
 .boton_pagar{
     padding-top: 2rem;
@@ -87,4 +90,26 @@
 .flecha{
     font-size: 2rem;
     padding: 3rem 1rem;
+}
+
+@media only screen and (max-width: 850px){
+    .tienda{
+        display: flex;
+        flex-direction: column;
+    }
+    .producto{
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        .precio{
+            list-style: none;
+        }
+    }
+    .sidebar{
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    .sidebar_abajo{
+        display: none;
+    }
 }

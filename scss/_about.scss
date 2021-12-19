@@ -22,3 +22,14 @@
     grid-area: descripcion;
     font-size: 1.3rem;
 }
+
+@media only screen and (max-width: 850px){
+    .us{
+        padding: 1rem;
+    }
+    .bios{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
